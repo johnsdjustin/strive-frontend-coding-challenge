@@ -1,6 +1,7 @@
 import React from 'react';
+import PersonCard from './PersonCard';
 
-export interface Data {
+interface PersonData {
     id: number,
     name: string,
     email: string,
@@ -9,7 +10,7 @@ export interface Data {
 }
 
 interface PersonListProps{
-    data: Data[],
+    data: PersonData[],
     searchInput: string
 }
 
@@ -20,18 +21,25 @@ const PersonList: React.FC<PersonListProps> = (props) => {
         searchInput
     } = props;
 
-    const render = () => {
+    // Determines if the match string is contained within the name string.
+    // If the match string is present in the name string, the function returns 
+    // true, otherwise it returns false
+    const isMatch = (name: string, match: string): boolean=> {
+      return name.toLowerCase().indexOf(match.toLowerCase()) > -1
+    }
 
+    // Generates an array of PersonCard components based on the name of the
+    // current person and the value the user types into the search bar
+    const render = () => {
         const cardList = data.map(person => {
-          if(person.name.toLowerCase().indexOf(searchInput.toLowerCase()) > -1){
+          if(isMatch(person.name, searchInput)){
             return (
-              <div style = {styles.card} key = {person.id} >
-                <img src = {person.avatar} alt = {person.name} width = "95" height = "96"/>
-                <div style = {styles.cardTextContainer}>
-                  <p style = {styles.nameText}>{person.name}</p>
-                  <p style = {styles.descriptionText}>{person.description}</p>
-                </div>
-              </div>
+              <PersonCard
+                id = {person.id}
+                name = {person.name}
+                avatar = {person.avatar}
+                description = {person.description}
+              />
             )
           }
     
@@ -48,33 +56,6 @@ const PersonList: React.FC<PersonListProps> = (props) => {
          {render()}
      </div>
      )
-}
-
-const styles = {
-    card: {
-        display: 'flex',
-        width: 575,
-        height: 96,
-    },
-    cardTextContainer:{
-        display: 'flex',
-        flexDirection: 'column' as const,
-        marginLeft: '5px'
-    },
-    nameText:{
-        fontWeight: 700,
-        fontSize: '16px',
-        color: '#333333',
-        lineHeight:'24px',
-        letterSpacing: '-0.025em'
-    },
-    descriptionText: {
-        fontSize: '14px',
-        color: '#666666',
-        lineHeight: '14px',
-        fontWeight: '21px',
-        letterSpacing: '-0.051em'
-    },
 }
 
 export default PersonList;
