@@ -4,6 +4,7 @@ import ListHeader from './ListHeader';
 import SearchBar from './SearchBar';
 import PersonList from './PersonList';
 import data from '../data/mock-data.json'
+import styles from './PersonFinder.module.css';
 
 const PersonFinder: React.FC = () => {
 
@@ -16,7 +17,7 @@ const PersonFinder: React.FC = () => {
     return (
         <div>
             <HeaderBar/>
-            <div style = {styles.centerContainer}>
+            <div className= {styles.centerContainer}>
               <ListHeader/>
               <SearchBar
                 handleChange={handleChange}
@@ -29,14 +30,6 @@ const PersonFinder: React.FC = () => {
             </div>
         </div>
     )
-}
-
-const styles = {
-  centerContainer:{
-    display: 'flex',
-    flexDirection: 'column' as const,
-    alignItems: 'center'
-  }
 }
 
 export default PersonFinder;
