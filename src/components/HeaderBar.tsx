@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from './Logo'
 import styles from './HeaderBar.module.css';
 
-const HeaderBar: React.FC = () => {
+const HeaderBar = ():JSX.Element => {
     return (
     <div className = {styles.headerBar}>
       <Logo/>

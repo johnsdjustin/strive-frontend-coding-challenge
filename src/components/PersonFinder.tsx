@@ -6,7 +6,7 @@ import PersonList from './PersonList';
 import data from '../data/mock-data.json'
 import styles from './PersonFinder.module.css';
 
-const PersonFinder: React.FC = () => {
+const PersonFinder = ():JSX.Element => {
 
   const [searchInput, setSearchInput] = useState('');
 

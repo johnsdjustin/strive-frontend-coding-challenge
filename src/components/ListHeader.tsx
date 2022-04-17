@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ListHeader.module.css';
 
-const ListHeader: React.FC = () => {
+const ListHeader = ():JSX.Element => {
 
     return (
         <div className = {styles.container}>

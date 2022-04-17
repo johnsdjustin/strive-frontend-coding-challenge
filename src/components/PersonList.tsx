@@ -14,7 +14,7 @@ interface PersonListProps{
     searchInput: string
 }
 
-const PersonList: React.FC<PersonListProps> = (props) => {
+const PersonList = (props: PersonListProps): JSX.Element => {
 
     const {
         data, 
@@ -24,13 +24,13 @@ const PersonList: React.FC<PersonListProps> = (props) => {
     // Determines if the match string is contained within the name string.
     // If the match string is present in the name string, the function returns 
     // true, otherwise it returns false
-    const isMatch = (name: string, match: string): boolean=> {
+    const isMatch = (name: string, match: string): boolean => {
       return name.toLowerCase().indexOf(match.toLowerCase()) > -1
     }
 
     // Generates an array of PersonCard components based on the name of the
     // current person and the value the user types into the search bar
-    const render = () => {
+    const render = (): (JSX.Element | null)[] => {
         const cardList = data.map(person => {
           if(isMatch(person.name, searchInput)){
             return (
@@ -39,11 +39,12 @@ const PersonList: React.FC<PersonListProps> = (props) => {
                 name = {person.name}
                 avatar = {person.avatar}
                 description = {person.description}
+                key = {person.id}
               />
             )
           }
     
-          return null
+          return null;
     
         })
     

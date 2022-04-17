@@ -1,0 +1,25 @@
+.searchContainer {
+    width: 561px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    position: absolute;
+    padding-left: 15px;
+}
+
+.searchBar {
+    height: 100%;
+    width: 100%;
+    background-color: #EFEFEF;
+    border-color: transparent;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.015em;
+    border-radius: 4px;
+    padding-left: 30px;
+}

@@ -8,7 +8,7 @@ interface PersonCardProps{
     description: string
 }
 
-const PersonCard: React.FC<PersonCardProps> = (props) => {
+const PersonCard = (props: PersonCardProps):JSX.Element => {
 
     const { id, name, avatar, description } = props;
 
