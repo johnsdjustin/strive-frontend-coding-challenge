@@ -4,7 +4,7 @@ import styles from './Logo.module.css'
 
 const Logo = ():JSX.Element => {
     return (
-        <img src = {logo} alt = "Wordmark - Headerbar" width = "61" height = "24" className = {styles.logo}/>
+        <img src = {logo} alt = "Wordmark - Headerbar" width = "60.39" height = "24" className = {styles.logo}/>
     )
 }
 

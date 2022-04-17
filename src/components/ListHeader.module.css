@@ -1,14 +1,21 @@
 .container{
     width: 562px;
-    min-height: 72px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-bottom: 31px;
 }
 
 .headerText {
     color: #112467;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Georgia;
+    line-height: 44px;
+    height: 37px;
+    width: 357px;
+    height: 37px;
 }
 
 .paragraphText {
@@ -17,5 +24,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 562px;
+    height: 72px;
+    /* text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
 }

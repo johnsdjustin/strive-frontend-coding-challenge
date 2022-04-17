@@ -14,7 +14,7 @@ const PersonCard = (props: PersonCardProps):JSX.Element => {
 
     return(
         <div className = {styles.card} key = {id} >
-            <img src = {avatar} alt = {name} width = "95" height = "96"/>
+            <img src = {avatar} alt = {name} width = "95.83" height = "96"/>
             <div className = {styles.cardTextContainer}>
                 <p className = {styles.nameText}>{name}</p>
                 <p className = {styles.descriptionText}>{description}</p>
