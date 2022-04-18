@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/strive-frontend-coding-challenge/static/css/main.7aef4b46.css",
-    "main.js": "/strive-frontend-coding-challenge/static/js/main.b671b388.js",
+    "main.css": "/strive-frontend-coding-challenge/static/css/main.8f5565ff.css",
+    "main.js": "/strive-frontend-coding-challenge/static/js/main.f46a0355.js",
     "static/js/787.8806f9fe.chunk.js": "/strive-frontend-coding-challenge/static/js/787.8806f9fe.chunk.js",
     "index.html": "/strive-frontend-coding-challenge/index.html",
-    "main.7aef4b46.css.map": "/strive-frontend-coding-challenge/static/css/main.7aef4b46.css.map",
-    "main.b671b388.js.map": "/strive-frontend-coding-challenge/static/js/main.b671b388.js.map",
+    "main.8f5565ff.css.map": "/strive-frontend-coding-challenge/static/css/main.8f5565ff.css.map",
+    "main.f46a0355.js.map": "/strive-frontend-coding-challenge/static/js/main.f46a0355.js.map",
     "787.8806f9fe.chunk.js.map": "/strive-frontend-coding-challenge/static/js/787.8806f9fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aef4b46.css",
-    "static/js/main.b671b388.js"
+    "static/css/main.8f5565ff.css",
+    "static/js/main.f46a0355.js"
   ]
 }
