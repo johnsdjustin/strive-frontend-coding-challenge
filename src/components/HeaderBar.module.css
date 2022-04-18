@@ -6,3 +6,10 @@
     border-right-width: 0;
     border-bottom-width: 0
   }
+
+  @media(max-width: 600px){
+    .headerBar {
+      display: flex;
+      justify-content: center;
+    }
+  }

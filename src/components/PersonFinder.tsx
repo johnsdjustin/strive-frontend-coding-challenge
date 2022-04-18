@@ -1,4 +1,4 @@
-import React, {useState, ChangeEvent} from 'react';
+import {useState, ChangeEvent} from 'react';
 import HeaderBar from './HeaderBar';
 import ListHeader from './ListHeader';
 import SearchBar from './SearchBar';

@@ -1,4 +1,3 @@
-import React from 'react';
 import PersonCard from './PersonCard';
 
 interface PersonData {

@@ -5,9 +5,23 @@
     margin-bottom: 24px;
 }
 
+
+@media(max-width: 600px){
+    .card {
+        width: 190px;
+        justify-content: center;
+    }
+}
+
 .cardTextContainer{
     flex-direction: column;
     margin-left: 24px;
+}
+
+@media(max-width: 600px){
+    .cardTextContainer{
+        margin-left: 5px;
+    }
 }
 
 .nameText {
@@ -19,11 +33,22 @@
 }
 
 .descriptionText {
+    height: 48px;
+    width: 455.21px;
     font-size: 14px;
     color: #666666;
     line-height: 14px;
     font-weight: 21px;
     letter-spacing: -0.051em;
-    height:48px;
-    width: 455.21px;
+}
+
+@media(max-width: 600px){
+    .descriptionText {
+        width: 190px;
+    }
+}
+
+.cardAvatar{
+    width: 95.83px; 
+    height: 96px;
 }

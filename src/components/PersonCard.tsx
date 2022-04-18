@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './PersonCard.module.css';
 
 interface PersonCardProps{
@@ -14,7 +13,7 @@ const PersonCard = (props: PersonCardProps):JSX.Element => {
 
     return(
         <div className = {styles.card} key = {id} >
-            <img src = {avatar} alt = {name} width = "95.83" height = "96"/>
+            <img src = {avatar} alt = {name} className={styles.cardAvatar}/>
             <div className = {styles.cardTextContainer}>
                 <p className = {styles.nameText}>{name}</p>
                 <p className = {styles.descriptionText}>{description}</p>

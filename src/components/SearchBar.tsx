@@ -1,4 +1,4 @@
-import React, {ChangeEvent} from 'react';
+import {ChangeEvent} from 'react';
 import searchIcon from '../assets/magnifiying.png'
 import styles from './SearchBar.module.css'
 

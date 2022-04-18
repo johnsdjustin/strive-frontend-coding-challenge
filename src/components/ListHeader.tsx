@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './ListHeader.module.css';
 
 const ListHeader = ():JSX.Element => {

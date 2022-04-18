@@ -5,6 +5,14 @@
     margin-bottom: 31px;
 }
 
+@media(max-width: 600px){
+    .container{
+        width: 250px;
+        align-items: center;
+        margin-bottom: 85px;
+    }
+}
+
 .headerText {
     color: #112467;
     font-weight: bold;
@@ -13,9 +21,15 @@
     font-style: normal;
     font-family: Georgia;
     line-height: 44px;
-    height: 37px;
     width: 357px;
     height: 37px;
+}
+
+@media(max-width: 600px){
+    .headerText {
+        font-size: 30px;
+        width: 250px;
+    }
 }
 
 .paragraphText {
@@ -26,5 +40,10 @@
     line-height: 24px;
     width: 562px;
     height: 72px;
-    /* text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+@media(max-width: 600px){
+    .paragraphText {
+        width: 250px;
+    }
 }
