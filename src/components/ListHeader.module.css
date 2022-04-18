@@ -21,6 +21,7 @@
     font-style: normal;
     font-family: Georgia;
     line-height: 44px;
+    margin-bottom: 50px;
     width: 357px;
     height: 37px;
 }
@@ -29,6 +30,7 @@
     .headerText {
         font-size: 30px;
         width: 250px;
+        margin-bottom: 10px;
     }
 }
 
