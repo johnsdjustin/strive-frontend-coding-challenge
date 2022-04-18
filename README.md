@@ -2,7 +2,7 @@
 
 This is my attempt at the [Strive Frontend Coding Challenge](https://www.notion.so/Frontend-Coding-Challenge-1a18c4de482540aebe51b43d648adf6f). 
 
-Open [https://johnsdjustin.github.io/strive-frontend-coding-challenge/index.html](https://johnsdjustin.github.io/strive-frontend-coding-challenge/index.html) to access the hosted project.
+Open [https://johnsdjustin.github.io/strive-frontend-coding-challenge/](https://johnsdjustin.github.io/strive-frontend-coding-challenge/) to access the hosted project.
 
 ## Run Locally
 
