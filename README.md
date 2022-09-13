@@ -1,6 +1,4 @@
-## Description
-
-This is my attempt at the [Strive Frontend Coding Challenge](https://www.notion.so/Frontend-Coding-Challenge-1a18c4de482540aebe51b43d648adf6f). 
+## Description 
 
 Open [https://johnsdjustin.github.io/strive-frontend-coding-challenge/](https://johnsdjustin.github.io/strive-frontend-coding-challenge/) to access the hosted project.
 
